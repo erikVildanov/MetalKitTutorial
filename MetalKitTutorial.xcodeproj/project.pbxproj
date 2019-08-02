@@ -14,6 +14,7 @@
 		8BFBFE1822F42E5900B38524 /* MetalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFBFE1722F42E5900B38524 /* MetalView.swift */; };
 		8BFBFE1A22F4383C00B38524 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 8BFBFE1922F4383C00B38524 /* Shaders.metal */; };
 		8BFBFE1C22F44C5C00B38524 /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFBFE1B22F44C5C00B38524 /* Matrix.swift */; };
+		8BFBFE1E22F45EDA00B38524 /* MetalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFBFE1D22F45EDA00B38524 /* MetalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		8BFBFE1722F42E5900B38524 /* MetalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalView.swift; sourceTree = "<group>"; };
 		8BFBFE1922F4383C00B38524 /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
 		8BFBFE1B22F44C5C00B38524 /* Matrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
+		8BFBFE1D22F45EDA00B38524 /* MetalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				8BFBFE1722F42E5900B38524 /* MetalView.swift */,
 				8BFBFE1922F4383C00B38524 /* Shaders.metal */,
 				8BFBFE1B22F44C5C00B38524 /* Matrix.swift */,
+				8BFBFE1D22F45EDA00B38524 /* MetalViewController.swift */,
 			);
 			path = MetalKitTutorial;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			files = (
 				8BFBFE1C22F44C5C00B38524 /* Matrix.swift in Sources */,
 				8BFBFE1A22F4383C00B38524 /* Shaders.metal in Sources */,
+				8BFBFE1E22F45EDA00B38524 /* MetalViewController.swift in Sources */,
 				8BFBFE1822F42E5900B38524 /* MetalView.swift in Sources */,
 				8BFBFE0622F42D3F00B38524 /* AppDelegate.swift in Sources */,
 			);
