@@ -9,6 +9,11 @@
 import Foundation
 import simd
 
+struct Vertex {
+    var position: vector_float4
+    var color: vector_float4
+}
+
 struct Matrix {
     var m: [Float]
     

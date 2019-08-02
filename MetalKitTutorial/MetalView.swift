@@ -17,11 +17,6 @@ import MetalKit
 //
 //x.w = 0;                        // x = { 1/4, 1/3, 1/2, 0 }.
 
-struct Vertex {
-    var position: vector_float4
-    var color: vector_float4
-}
-
 class MetalView: UIView {
     
     var vertex_buffer: MTLBuffer!
@@ -34,6 +29,8 @@ class MetalView: UIView {
         super.init(frame: frame)
         initializeView()
         setupPropety()
+        createBuffer()
+        registerShaders()
     }
     convenience init() {
         self.init(frame: CGRect.zero)
@@ -56,12 +53,6 @@ class MetalView: UIView {
         mtkView.device = device
         mtkView.colorPixelFormat = .bgra8Unorm
         mtkView.delegate = self
-    }
-    
-    func render() {
-        createBuffer()
-        registerShaders()
-        sendToGPU()
     }
     
     func createBuffer() {
@@ -112,7 +103,7 @@ extension MetalView: MTKViewDelegate {
     }
     
     func mtkView(_ view: MTKView, drawableSizeWillChange size: CGSize) {
-        render()
+        sendToGPU()
     }
     
     

@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B2C010422F4653200FC2CB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2C010322F4653200FC2CB7 /* AppDelegate.swift */; };
+		8B2C010622F4653200FC2CB7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2C010522F4653200FC2CB7 /* ViewController.swift */; };
+		8B2C010922F4653200FC2CB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B2C010722F4653200FC2CB7 /* Main.storyboard */; };
+		8B2C010B22F4653200FC2CB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B2C010A22F4653200FC2CB7 /* Assets.xcassets */; };
+		8B2C010E22F4653200FC2CB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B2C010C22F4653200FC2CB7 /* LaunchScreen.storyboard */; };
+		8B2C011522F46C4900FC2CB7 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 8B2C011422F46C4900FC2CB7 /* Shaders.metal */; };
+		8B2C011822F46C6D00FC2CB7 /* MathUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2C011722F46C6D00FC2CB7 /* MathUtils.swift */; };
+		8B2C011A22F46C7800FC2CB7 /* MetalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2C011922F46C7800FC2CB7 /* MetalView.swift */; };
 		8BFBFE0622F42D3F00B38524 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFBFE0522F42D3F00B38524 /* AppDelegate.swift */; };
 		8BFBFE0B22F42D3F00B38524 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BFBFE0922F42D3F00B38524 /* Main.storyboard */; };
 		8BFBFE0D22F42D4000B38524 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BFBFE0C22F42D4000B38524 /* Assets.xcassets */; };
@@ -18,6 +26,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8B2C010122F4653200FC2CB7 /* MetalKitCh08.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetalKitCh08.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B2C010322F4653200FC2CB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8B2C010522F4653200FC2CB7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8B2C010822F4653200FC2CB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8B2C010A22F4653200FC2CB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8B2C010D22F4653200FC2CB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8B2C010F22F4653200FC2CB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B2C011422F46C4900FC2CB7 /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		8B2C011722F46C6D00FC2CB7 /* MathUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathUtils.swift; sourceTree = "<group>"; };
+		8B2C011922F46C7800FC2CB7 /* MetalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalView.swift; sourceTree = "<group>"; };
 		8BFBFE0222F42D3F00B38524 /* MetalKitTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetalKitTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BFBFE0522F42D3F00B38524 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BFBFE0A22F42D3F00B38524 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -31,6 +49,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8B2C00FE22F4653200FC2CB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8BFBFDFF22F42D3F00B38524 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -41,10 +66,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B2C010222F4653200FC2CB7 /* MetalKitCh08 */ = {
+			isa = PBXGroup;
+			children = (
+				8B2C011622F46C5F00FC2CB7 /* Sources */,
+				8B2C011322F46C3C00FC2CB7 /* Resources */,
+				8B2C010322F4653200FC2CB7 /* AppDelegate.swift */,
+				8B2C010522F4653200FC2CB7 /* ViewController.swift */,
+				8B2C010722F4653200FC2CB7 /* Main.storyboard */,
+				8B2C010A22F4653200FC2CB7 /* Assets.xcassets */,
+				8B2C010C22F4653200FC2CB7 /* LaunchScreen.storyboard */,
+				8B2C010F22F4653200FC2CB7 /* Info.plist */,
+			);
+			path = MetalKitCh08;
+			sourceTree = "<group>";
+		};
+		8B2C011322F46C3C00FC2CB7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8B2C011422F46C4900FC2CB7 /* Shaders.metal */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8B2C011622F46C5F00FC2CB7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				8B2C011722F46C6D00FC2CB7 /* MathUtils.swift */,
+				8B2C011922F46C7800FC2CB7 /* MetalView.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
 		8BFBFDF922F42D3F00B38524 = {
 			isa = PBXGroup;
 			children = (
 				8BFBFE0422F42D3F00B38524 /* MetalKitTutorial */,
+				8B2C010222F4653200FC2CB7 /* MetalKitCh08 */,
 				8BFBFE0322F42D3F00B38524 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				8BFBFE0222F42D3F00B38524 /* MetalKitTutorial.app */,
+				8B2C010122F4653200FC2CB7 /* MetalKitCh08.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,6 +135,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		8B2C010022F4653200FC2CB7 /* MetalKitCh08 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B2C011222F4653200FC2CB7 /* Build configuration list for PBXNativeTarget "MetalKitCh08" */;
+			buildPhases = (
+				8B2C00FD22F4653200FC2CB7 /* Sources */,
+				8B2C00FE22F4653200FC2CB7 /* Frameworks */,
+				8B2C00FF22F4653200FC2CB7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MetalKitCh08;
+			productName = MetalKitCh08;
+			productReference = 8B2C010122F4653200FC2CB7 /* MetalKitCh08.app */;
+			productType = "com.apple.product-type.application";
+		};
 		8BFBFE0122F42D3F00B38524 /* MetalKitTutorial */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8BFBFE1422F42D4000B38524 /* Build configuration list for PBXNativeTarget "MetalKitTutorial" */;
@@ -103,6 +179,9 @@
 				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = "Erik Vildanov";
 				TargetAttributes = {
+					8B2C010022F4653200FC2CB7 = {
+						CreatedOnToolsVersion = 10.3;
+					};
 					8BFBFE0122F42D3F00B38524 = {
 						CreatedOnToolsVersion = 10.3;
 					};
@@ -122,11 +201,22 @@
 			projectRoot = "";
 			targets = (
 				8BFBFE0122F42D3F00B38524 /* MetalKitTutorial */,
+				8B2C010022F4653200FC2CB7 /* MetalKitCh08 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		8B2C00FF22F4653200FC2CB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B2C010E22F4653200FC2CB7 /* LaunchScreen.storyboard in Resources */,
+				8B2C010B22F4653200FC2CB7 /* Assets.xcassets in Resources */,
+				8B2C010922F4653200FC2CB7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8BFBFE0022F42D3F00B38524 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -140,6 +230,18 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		8B2C00FD22F4653200FC2CB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B2C011522F46C4900FC2CB7 /* Shaders.metal in Sources */,
+				8B2C011822F46C6D00FC2CB7 /* MathUtils.swift in Sources */,
+				8B2C011A22F46C7800FC2CB7 /* MetalView.swift in Sources */,
+				8B2C010622F4653200FC2CB7 /* ViewController.swift in Sources */,
+				8B2C010422F4653200FC2CB7 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8BFBFDFE22F42D3F00B38524 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -155,6 +257,22 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		8B2C010722F4653200FC2CB7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B2C010822F4653200FC2CB7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8B2C010C22F4653200FC2CB7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B2C010D22F4653200FC2CB7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		8BFBFE0922F42D3F00B38524 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -174,6 +292,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		8B2C011022F4653200FC2CB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D423L8TC7V;
+				INFOPLIST_FILE = MetalKitCh08/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CloudBerryLab.MetalKitCh08;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8B2C011122F4653200FC2CB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D423L8TC7V;
+				INFOPLIST_FILE = MetalKitCh08/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CloudBerryLab.MetalKitCh08;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		8BFBFE1222F42D4000B38524 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -329,6 +483,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8B2C011222F4653200FC2CB7 /* Build configuration list for PBXNativeTarget "MetalKitCh08" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B2C011022F4653200FC2CB7 /* Debug */,
+				8B2C011122F4653200FC2CB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		8BFBFDFD22F42D3F00B38524 /* Build configuration list for PBXProject "MetalKitTutorial" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
