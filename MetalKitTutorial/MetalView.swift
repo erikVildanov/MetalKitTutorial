@@ -25,6 +25,7 @@ struct Vertex {
 class MetalView: MTKView {
     
     var vertex_buffer: MTLBuffer!
+    var uniform_buffer: MTLBuffer!
     var rps: MTLRenderPipelineState! = nil
     
     required init(coder: NSCoder) {
@@ -43,6 +44,10 @@ class MetalView: MTKView {
                            Vertex(position: [ 1.0, -1.0, 0.0, 1.0], color: [0, 1, 0, 1]),
                            Vertex(position: [ 0.0,  1.0, 0.0, 1.0], color: [0, 0, 1, 1])]
         vertex_buffer = device!.makeBuffer(bytes: vertex_data, length: MemoryLayout<Vertex>.size * 3, options:[])
+        
+        uniform_buffer = device!.makeBuffer(length: MemoryLayout<Float>.size * 16, options: [])
+        let bufferPointer = uniform_buffer.contents()
+        memcpy(bufferPointer, Matrix().modelMatrix(matrix: Matrix()).m, MemoryLayout<Float>.size * 16)
     }
     
     func registerShaders() {
@@ -67,6 +72,7 @@ class MetalView: MTKView {
             let command_encoder = command_buffer!.makeRenderCommandEncoder(descriptor: rpd)
             command_encoder!.setRenderPipelineState(rps)
             command_encoder!.setVertexBuffer(vertex_buffer, offset: 0, index: 0)
+            command_encoder!.setVertexBuffer(uniform_buffer, offset: 0, index: 1)
             command_encoder!.drawPrimitives(type: .triangle, vertexStart: 0, vertexCount: 3, instanceCount: 1)
             command_encoder!.endEncoding()
             command_buffer!.present(drawable)
